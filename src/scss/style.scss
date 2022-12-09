@@ -1,0 +1,14 @@
+@import "fonts";
+@import "_typography";
+
+$animation_speed: 0.25s;
+
+*{
+    outline: none;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
