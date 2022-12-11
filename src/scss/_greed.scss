@@ -1,0 +1,33 @@
+.container {
+  position: relative;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto;
+  @media (min-width: 1230px) {
+    width: 1200px;
+  }
+  @media (min-width: 992px) {
+    max-width: 960px;
+  }
+  @media (min-width: 768px) {
+    max-width: 720px;
+  }
+  @media (min-width: 576px) {
+    max-width: 540px;
+  }
+}
+
+.row {
+  margin: 0 -15px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+
+  &--five_cols {
+    .col {
+      width: calc(100% / 5);
+      padding: 0 15px;
+    }
+  }
+}

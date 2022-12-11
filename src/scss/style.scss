@@ -1,7 +1,22 @@
+// Шрифты
 @import "fonts";
+
+// Переменны (цвета, скорость transition и пр)
+@import "_variables";
+
+// Сетка
+@import "_greed";
+
+// UI
+@import "_ui";
+
+// Стили текстов
 @import "_typography";
 
-$animation_speed: 0.25s;
+// Блоки
+@import "_header";
+@import "_sectionHeader";
+@import "_footer";
 
 *{
     outline: none;
@@ -11,4 +26,14 @@ $animation_speed: 0.25s;
 body{
     margin: 0;
     padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.text {
+    &--blue {
+        color: $primary-blue;
+    }
 }

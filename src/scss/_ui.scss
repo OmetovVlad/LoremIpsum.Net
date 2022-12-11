@@ -1,0 +1,42 @@
+input {
+  font-family: $main_font;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.button {
+  font-family: $main_font;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  background: $primary-blue;
+  border: 1px solid $white;
+  border-radius: 4px;
+  display: block;
+  padding: 15px;
+  color: $white;
+  transition: all $animation_speed;
+  cursor: pointer;
+  width: 100%;
+  @media (min-width: 768px) {
+    width: auto;
+  }
+  @media (min-width: 992px){
+    font-size: 15px;
+    &:hover {
+      //border-color: $primary-blue;
+      background: $dark-blue;
+    }
+  }
+  &--white {
+    color: $gray03;
+    border-color: $gray02;
+    background: $white;
+    @media (min-width: 992px) {
+      &:hover {
+        background: $gray01;
+      }
+    }
+  }
+}
