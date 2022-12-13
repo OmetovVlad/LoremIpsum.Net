@@ -1,0 +1,111 @@
+.section_checkout {
+  padding: 45px 0 30px;
+  background-color: $main_bg_color;
+  background-image: url('@img/section2_bg.png');
+  background-size: cover;
+  background-position: center;
+  @media (min-width: 7682px) {
+    padding: 60px 0 70px
+  }
+  @media (min-width: 992px) {
+    padding: 120px 0 150px
+  }
+  &__steps {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin-bottom: 30px;
+    @media (min-width: 992px) {
+      margin-bottom: 50px;
+    }
+    & > .row {
+      justify-content: center;
+    }
+  }
+
+  &__step {
+    position: relative;
+    padding: 15px 15px;
+    width: calc(100% / 2);
+    text-align: center;
+    @media (min-width: 576px) {
+      width: calc(100% / 3);
+    }
+    @media (min-width: 992px) {
+      width: calc(100% / 5);
+      &:before {
+        content: "";
+        display: block;
+        height: 6px;
+        width: 100%;
+        background-image: url('@img/dots.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        left: -50%;
+        top: 62px;
+        z-index: 0;
+      }
+      &:first-child {
+        &:before {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__icon {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background: $primary-blue;
+    border: 5px solid $dark-blue;
+    z-index: 1;
+    &_img {
+      display: block;
+      max-width: 55px;
+      max-height: 55px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 1.2;
+    color: $white;
+    @media (min-width: 992px) {
+      font-size: 16px;
+    }
+  }
+
+  &__form {
+    &_item {
+      width: 100%;
+      padding: 15px;
+      @media (min-width: 576px) {
+        width: calc(100% / 2);
+      }
+      @media (min-width: 992px) {
+        width: calc(100% / 3);
+      }
+      &--x2_width {
+        width: 100%;
+        @media (min-width: 576px) {
+          width: 100%;
+        }
+        @media (min-width: 992px){
+          width: calc(100% / 3 * 2);
+        }
+      }
+    }
+  }
+
+  &__input_wrapper {
+
+  }
+}

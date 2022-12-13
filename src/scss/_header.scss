@@ -29,7 +29,44 @@
     }
   }
 
-  &__menu{
+  &__burger {
+    padding: 20px 15px;
+    width: 60px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    @media (min-width: 768px) {
+      display: none;
+    }
+    &_line {
+      height: 1px;
+      width: 100%;
+      background: $white;
+      //& + & {
+      //  margin-top: 5px;
+      //}
+    }
+    &--open &_line {
+      &:nth-child(1) {
+        transform: rotate(45deg);
+        margin-top: 9px;
+      }
+      &:nth-child(2) {
+        opacity: 0;
+      }
+      &:nth-child(3) {
+        transform: rotate(-45deg);
+        margin-top: -17px;
+      }
+    }
+  }
+
+  &__menu {
     padding: 0;
     margin: 0 0 0 auto;
     display: none;
@@ -38,28 +75,69 @@
       flex-wrap: wrap;
       align-items: center;
     }
-  }
+    &_item {
+      color: $white;
+      text-decoration: none;
+      font-size: 14px;
+      padding: 0 20px;
+      text-transform: uppercase;
+      display: flex;
+      flex-wrap: wrap;
+      height: 100%;
+      align-items: center;
+      transition: all $animation_speed;
+      @media (min-width: 992px) {
+        padding: 0 30px;
+        &:hover {
+          background: rgba($white, 0.05);
+        }
+      }
 
-  &_menu__item {
-    color: $white;
-    text-decoration: none;
-    font-size: 14px;
-    padding: 0 20px;
-    text-transform: uppercase;
-    display: flex;
-    height: 100%;
-    align-items: center;
-    transition: all $animation_speed;
-    @media (min-width: 992px) {
-      padding: 0 30px;
-      &:hover {
-        background: rgba($white, 0.05);
+      &--active {
+        color: $primary-blue;
+        pointer-events: none;
       }
     }
-    &--active{
-      color: $primary-blue;
+
+    @media (max-width: 767px) {
+      position: fixed;
+      padding: 15px 0;
+      top: 62px;
+      left: 0;
+      right: 0;
+      background: rgba($header_bg_color, 0.9);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      opacity: 0;
       pointer-events: none;
+      &_item {
+        padding: 15px 0;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+      }
+      &--open {
+        opacity: 1;
+        pointer-events: auto;
+      }
     }
   }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

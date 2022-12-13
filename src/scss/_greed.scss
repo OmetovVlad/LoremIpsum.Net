@@ -5,7 +5,7 @@
   padding-right: 15px;
   margin: auto;
   @media (min-width: 1230px) {
-    width: 1200px;
+    max-width: 1200px;
   }
   @media (min-width: 992px) {
     max-width: 960px;
@@ -23,11 +23,12 @@
   display: flex;
   flex-wrap: wrap;
   position: relative;
+}
 
-  &--five_cols {
-    .col {
-      width: calc(100% / 5);
-      padding: 0 15px;
-    }
-  }
+.ml-auto {
+  margin-left: auto;
+}
+
+.mr-auto {
+  margin-right: auto;
 }

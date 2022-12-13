@@ -1,5 +1,170 @@
 <section class="section_checkout">
   <div class="container">
+    <div class="title_block title_block--white">
+      <h3 class="title_block__title">Оформление <span class="text--blue">заказа</span></h3>
+      <span class="title_block__descr">Перед заполнением формы ознакомьтесь с нашей схемой работы!</span>
+    </div>
+
+
+    <div class="section_checkout__steps">
+      <div class="row">
+        <div class="section_checkout__step">
+          <div class="section_checkout__icon">
+            <svg class="section_checkout__icon_img">
+              <use xlink:href="#loupe"></use>
+            </svg>
+          </div>
+          <span class="section_checkout__text">Lorem ipsum dolor sit amet</span>
+        </div>
+
+        <div class="section_checkout__step">
+          <div class="section_checkout__icon">
+            <svg class="section_checkout__icon_img">
+              <use xlink:href="#percent"></use>
+            </svg>
+          </div>
+          <span class="section_checkout__text">Consectetur adipiscing elit</span>
+        </div>
+
+        <div class="section_checkout__step">
+          <div class="section_checkout__icon">
+            <svg class="section_checkout__icon_img">
+              <use xlink:href="#document"></use>
+            </svg>
+          </div>
+          <span class="section_checkout__text">Sed do eiusmod tempor</span>
+        </div>
+
+        <div class="section_checkout__step">
+          <div class="section_checkout__icon">
+            <svg class="section_checkout__icon_img">
+              <use xlink:href="#letter"></use>
+            </svg>
+          </div>
+          <span class="section_checkout__text">Esse cillum dolore eu fugiat</span>
+        </div>
+
+        <div class="section_checkout__step">
+          <div class="section_checkout__icon">
+            <svg class="section_checkout__icon_img">
+              <use xlink:href="#money"></use>
+            </svg>
+          </div>
+          <span class="section_checkout__text">Excepteur sint occaecat cupidatat non proident</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="section_checkout__form">
+      <form action="" method="post">
+        <div class="row">
+
+          <div class="section_checkout__form_item">
+            <div class="section_checkout__input_wrapper">
+
+              <div class="select">
+                <div class="select__head" tabindex="0">
+                  <span class="select__title">Выберите тип системы</span>
+                  <div class="select__head_arrow">
+                    <svg class="select__head_arrow_icon">
+                      <use xlink:href="#arrow"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="select__select-list">
+                  <label class="select__item">
+                    <input class="select__item-radio" type="radio" name="system" value="linux" checked>
+                    <span class="select__item-value">Linux</span>
+                  </label>
+                  <label class="select__item">
+                    <input class="select__item-radio" type="radio" name="system" value="windows">
+                    <span class="select__item-value">Windows</span>
+                  </label>
+                  <label class="select__item">
+                    <input class="select__item-radio" type="radio" name="system" value="macos">
+                    <span class="select__item-value">MacOS</span>
+                  </label>
+                  <label class="select__item">
+                    <input class="select__item-radio" type="radio" name="system" value="ios">
+                    <span class="select__item-value">iOS</span>
+                  </label>
+                  <label class="select__item">
+                    <input class="select__item-radio" type="radio" name="system" value="android">
+                    <span class="select__item-value">Android</span>
+                  </label>
+                  <label class="select__item">
+                    <input class="select__item-radio" type="radio" name="system" value="windows mobile">
+                    <span class="select__item-value">Windows Mobile</span>
+                  </label>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="section_checkout__form_item">
+            <div class="section_checkout__input_wrapper">
+              <input type="text" class="input_text" placeholder="Ваш e-mail" name="email" />
+            </div>
+          </div>
+
+          <div class="section_checkout__form_item">
+            <div class="section_checkout__input_wrapper">
+              <input type="text" class="input_text" placeholder="Ваше имя" name="name" />
+            </div>
+          </div>
+
+          <div class="section_checkout__form_item section_checkout__form_item--x2_width">
+            <div class="section_checkout__input_wrapper">
+
+              <div class="input_range">
+                <div class="input_range__text">
+                  <span class="input_range__input_name">Sed ut perspiciatis, unde omnis iste natus</span>
+                  <span class="input_range__value">20 %</span>
+                </div>
+                <div class="input_range__slider">
+                  <div class="input_range__styled_slider">
+                    <div class="input_range__dot" style="left: 20%;"></div>
+                    <div class="input_range__line"></div>
+                  </div>
+                  <input type="range" class="input_range__input" min="0" max="100" value="20" name="range" />
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="section_checkout__form_item">
+            <div class="section_checkout__input_wrapper">
+
+              <label class="input_file">
+                <div class="input_file__styled">
+                  <div class="input_file__button_icon">
+                    <img src="@img/icons/file.svg" alt="">
+                  </div>
+                  <span class="input_file__button_text">Прикрепить файл</span>
+                </div>
+                <input type="file" class="input_file__input" name="file" />
+              </label>
+
+            </div>
+          </div>
+
+          <div class="section_checkout__form_item ml-auto mr-auto">
+            <div class="section_checkout__input_wrapper">
+
+              <button class="button">Заказать</button>
+
+            </div>
+          </div>
+
+
+
+        </div>
+      </form>
+    </div>
+
 
   </div>
 </section>
